@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>OmniTranslate</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('img/picture2.jpeg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .main {
+      background-color: rgba(0, 123, 255, 0.8);
+      color: #fff;
+      padding: 10px 0;
+    }
+
+    .indent {
+      padding: 0 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .text-input {
+      margin-bottom: 20px;
+    }
+
+    .text-input textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      resize: none;
+    }
+
+    .controls {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .controls li {
+      list-style: none;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+    }
+
+    .exchange {
+      margin: 0 10px;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    select {
+      padding: 8px;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+	padding:115px 0 30px;
+	overflow:hidden;
+	text-align:center
+}
+footer p {
+	font:13px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:#fff;
+	margin:0
+}
+footer p a {
+	color:#fff;
+-webkit-transition:all .25s;
+-o-transition:all .25s;
+transition:all .25s
+}
+footer p a:hover {
+	color:#de8e15
+}
+footer em {
+	font-style:normal
+}
+footer h1.navbar-brand_ {
+	float:none;
+	display:inline-block;
+	position:relative;
+	padding:0 119px;
+	margin-bottom:85px
+}
+footer h1.navbar-brand_ a {
+	font-size:34px;
+	line-height:1em
+}
+footer h1.navbar-brand_:after {
+	content:'';
+	width:2px;
+	height:47px;
+	top:-12px;
+	left:0;
+	background:#de8e15;
+	position:absolute
+}
+footer h1.navbar-brand_:before {
+	content:'';
+	width:2px;
+	height:47px;
+	top:-12px;
+	right:0;
+	background:#de8e15;
+	position:absolute
+}
+  </style>
+</head>
+<div class="main">
+    <header class="indent">
+        <div class="container">
+            <div class="box">
+                <h1 class="navbar-brand navbar-brand_" data-wow-delay="0.2s"><a href="index.html">OmniTranslate</a></h1>
+                <nav class="navbar navbar-default navbar-static-top tm_navbar clearfix" role="navigation">
+                    <ul class="nav sf-menu clearfix">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index-2.html">Languages</a></li>
+                        <li class="active"><a href="index-0.html">Translate</a></li>
+                        <li><a href="index-5.html">Privacy Policy</a></li>
+                        <li><a href="index-4.html">Contacts</a></li>
+                    </ul>
+                </nav>
+                <hr>
+            </div>
+        </div>
+    </header>
+</div>
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <div class="text-input">
+        <textarea spellcheck="false" class="from-text" placeholder="Enter text"></textarea>
+        <textarea spellcheck="false" readonly disabled class="to-text" placeholder="Translation"></textarea>
+      </div>
+      <ul class="controls">
+        <li class="row from">
+          <div class="icons">
+            <i id="from" class="fas fa-volume-up"></i>
+            <i id="from" class="fas fa-copy"></i>
+          </div>
+          <select></select>
+        </li>
+        <li class="exchange"><i class="fas fa-exchange-alt"></i></li>
+        <li class="row to">
+          <select></select>
+          <div class="icons">
+            <i id="to" class="fas fa-volume-up"></i>
+            <i id="to" class="fas fa-copy"></i>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <button>Translate Text</button>
+  </div>
+
+
+
+  <script src="js/countries.js"></script>
+  <script src="js/script.js"></script>
+</body>
+<div class="container">
+    <h1 class="navbar-brand navbar-brand_" data-wow-delay="0.2s"><a href="index.html">OmniTranslate</a></h1>
+    <p class="mb-2 text-center text-lg-start">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed by <a href="https://www.linkedin.com/in/shreyas-rai-3349b8228?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Shreyas Rai</a>, <a href="https://www.linkedin.com/in/sheetal-tripathi-11a792274?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BsJVCaLxeSAWEWtK0BC2jqQ%3D%3D">Sheetal Tripathi</a> 
+    </p>
+</div>
+</html>
